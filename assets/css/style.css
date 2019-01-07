@@ -1,4 +1,4 @@
-html, body {
+html, body, div {
   overflow-x: hidden;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   border: 0;
@@ -10,10 +10,10 @@ html, body {
 
 .header {
   padding: 10px; }
-  .header .social-media ul li, .header .action-bar ul li, .header .side_column .newsletter ul li {
+  .header .social-media ul li, .header .action-bar ul li, .header .side_column .newsletter ul li, .header .footer_wrapper ul li {
     display: inline-block;
     margin-right: 2px; }
-    .header .social-media ul li a .fa, .header .action-bar ul li a .fa, .header .side_column .newsletter ul li a .fa {
+    .header .social-media ul li a .fa, .header .action-bar ul li a .fa, .header .side_column .newsletter ul li a .fa, .header .footer_wrapper ul li a .fa {
       padding: 10px;
       font-size: 10px;
       width: 28px;
@@ -21,32 +21,32 @@ html, body {
       margin: 2px 0px;
       border-radius: 70%;
       color: white; }
-    .header .social-media ul li a .fa:hover, .header .action-bar ul li a .fa:hover, .header .side_column .newsletter ul li a .fa:hover {
+    .header .social-media ul li a .fa:hover, .header .action-bar ul li a .fa:hover, .header .side_column .newsletter ul li a .fa:hover, .header .footer_wrapper ul li a .fa:hover {
       opacity: 0.7; }
-    .header .social-media ul li a .fa-facebook, .header .action-bar ul li a .fa-facebook, .header .side_column .newsletter ul li a .fa-facebook {
+    .header .social-media ul li a .fa-facebook, .header .action-bar ul li a .fa-facebook, .header .side_column .newsletter ul li a .fa-facebook, .header .footer_wrapper ul li a .fa-facebook {
       background: #3B5998; }
-    .header .social-media ul li a .fa-twitter, .header .action-bar ul li a .fa-twitter, .header .side_column .newsletter ul li a .fa-twitter {
+    .header .social-media ul li a .fa-twitter, .header .action-bar ul li a .fa-twitter, .header .side_column .newsletter ul li a .fa-twitter, .header .footer_wrapper ul li a .fa-twitter {
       background: #55ACEE; }
-    .header .social-media ul li a .fa-google, .header .action-bar ul li a .fa-google, .header .side_column .newsletter ul li a .fa-google {
+    .header .social-media ul li a .fa-google, .header .action-bar ul li a .fa-google, .header .side_column .newsletter ul li a .fa-google, .header .footer_wrapper ul li a .fa-google {
       background: #dd4b39; }
-    .header .social-media ul li a .fa-linkedin, .header .action-bar ul li a .fa-linkedin, .header .side_column .newsletter ul li a .fa-linkedin {
+    .header .social-media ul li a .fa-linkedin, .header .action-bar ul li a .fa-linkedin, .header .side_column .newsletter ul li a .fa-linkedin, .header .footer_wrapper ul li a .fa-linkedin {
       background: #007bb5; }
-    .header .social-media ul li a .fa-youtube, .header .action-bar ul li a .fa-youtube, .header .side_column .newsletter ul li a .fa-youtube {
+    .header .social-media ul li a .fa-youtube, .header .action-bar ul li a .fa-youtube, .header .side_column .newsletter ul li a .fa-youtube, .header .footer_wrapper ul li a .fa-youtube {
       background: #bb0000; }
-  .header .widget_title, .header .side_column .recent_post div {
+  .header .widget_title, .header .side_column .recent_post div, .header .footer_wrapper {
     color: #8b8b8b;
     line-height: 1.8;
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     font-weight: 600;
     font-size: 15px; }
-  .header .widget_subtitle {
+  .header .widget_subtitle, .header .footer_wrapper {
     color: #a0a0a0;
     line-height: 1.8;
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     font-weight: 300;
-    font-size: 10px; }
+    font-size: 15px; }
   .header .div_clear {
     clear: both; }
   .header .section_space, .header .side_column .banner_2 {
@@ -161,14 +161,39 @@ html, body {
       background: #ec6a2a;
       color: #fff; }
   .header .side_column .instagram_widgets .instagram_image_widget {
+    height: 20%;
+    margin: 2px 2px 5px 2px; }
+  .header .instagram_footer .instagram_image_widget {
     float: left;
-    width: 25%;
-    height: 25%;
-    margin: 5px 5px; }
-  .header .side_column .instagram_footer .instagram_image_widget {
-    float: left;
-    width: 25%;
-    height: 25%;
-    margin: 5px 5px; }
+    width: 20%; }
+  .header .pagination_custom {
+    width: 30%;
+    margin: 0 auto; }
+    .header .pagination_custom a {
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      font-size: 12px;
+      margin-right: 4px;
+      text-align: center;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      font-weight: bold;
+      color: #929292;
+      background-color: #f0f0f0;
+      text-decoration: none;
+      margin-right: 2px; }
+      .header .pagination_custom a:hover {
+        color: #ffffff;
+        background-color: #ec6a2a; }
+      .header .pagination_custom a:active {
+        color: #ffffff;
+        background-color: #ec6a2a; }
+  .header .footer_wrapper {
+    background-color: #1c2433;
+    padding-left: 0px;
+    padding-right: 0px; }
 
 /*# sourceMappingURL=style.css.map */

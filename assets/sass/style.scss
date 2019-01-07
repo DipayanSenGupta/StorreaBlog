@@ -1,4 +1,4 @@
-html,body {
+html,body,div {
 	overflow-x: hidden;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   border: 0;
@@ -75,7 +75,7 @@ html,body {
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     font-weight: 300;
-		font-size: 10px;
+		font-size: 15px;
 	}
 
 	.div_clear {
@@ -294,24 +294,62 @@ html,body {
 		}
 		.instagram_widgets{
 				.instagram_image_widget {
-						float: left;
-						width: 25%;
-						height: 25%;
-						margin: 5px 5px;
+						// float: left;
+						// width: 25%;
+						height: 20%;
+						margin: 2px 2px 5px 2px;
 			}
 		}
-
-		.instagram_footer{
-			.instagram_image_widget {
-				float: left;
-				width: 25%;
-				height: 25%;
-				margin: 5px 5px;
-			}
-		}
-
 	}
 
+	.instagram_footer{
+		.instagram_image_widget {
+			float: left;
+			width: 20%;
+		}
+	}
+
+	.pagination_custom{
+		width : 30%;
+		margin:0 auto;
+		a {
+				display: inline-block;
+		    width: 45px;
+		    height: 45px;
+		    line-height: 45px;
+		    font-size: 12px;
+		    margin-right: 4px;
+		    text-align: center;
+		    border-radius: 50%;
+		    -moz-border-radius: 50%;
+		    -webkit-border-radius: 50%;
+
+    		font-weight: bold;
+				color: #929292;
+				background-color: #f0f0f0;
+				text-decoration: none;
+				margin-right: 2px;
+
+			&:hover{
+				color: #ffffff;
+				background-color: #ec6a2a;
+			}
+			&:active{
+				color: #ffffff;
+				background-color: #ec6a2a;
+			}
+
+		}
+	}
+
+	.footer_wrapper{
+		background-color: #1c2433;
+		padding-left: 0px;  
+		padding-right: 0px;
+		@extend .widget_title;
+		@extend .widget_subtitle;
+		@extend .social-media;	
+}
 }
 
 		
