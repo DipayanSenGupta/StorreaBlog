@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+	
+	      .overlay {
+	height: 0%;
+        width: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.9);
+        overflow-y: scroll;
+      }
+      .overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+      }
+      .overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+      }
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      .overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+      }
+      @media screen and (max-height: 450px) {
+	.overlay {
+          overflow-y: auto;
+	}
+	.overlay a {
+          font-size: 20px
+	}
+	.overlay .closebtn {
+          font-size: 40px;
+          top: 15px;
+          right: 35px;
+	}
+      }
+
+</style>
+
+
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<!-- Use outer div's id in JavaScript/jQuery to show/hide overlay -->
+    <div id="overlay-container" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <div class="overlay-content">
+        <a href="">Menu</a>
+      </div>
+    </div>
+
+    <!-- Button click to call overlay -->
+    <!-- <input type="button" value="Show Overlay" onclick="openNav();" /> -->
+    <button onclick="openNav()"><i class="fas fa-bars"></i></button>
+	</div>
+</div>
+</body>
+</html>

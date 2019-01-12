@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>On click Menu</title>
+        <style>
+            .handle{
+                width: 100%;
+                background:#333333;
+                text-align: left;
+                box-sizing: border-box;
+                padding:15px 10px;
+                cursor: pointer;
+                color: white;
+                box-sizing: border-box;
+            }
+
+            .hide {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="handle">Menu</div>
+            <ul class="hide">
+                <li><a id="active" href="index.html">HOME</a></li>
+                <li><a href="collection.html">PRODUCTS</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="info.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+
+            $(document).ready(function() {
+                $('.handle').on('click', function() {
+                    $('nav ul').slideToggle();
+                });
+            });
+
+        </script>
+    </body>
+</html>

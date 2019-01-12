@@ -10,24 +10,27 @@
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <script> 
 $(document).ready(function(){
+
   $("#flip").click(function(){
-    $("#panel").slideUp("slow");
-    // $("#flip_wrapper").css({"display":"none"});
-    $("#panel").css({"display":"block"});
+  	console.log("jello")
+    $("#panel").slideDown("slow");
+    $("#flip_wrapper").css({"display":"none"});
+
   });
 
     $("#button").click(function(){
-    $("#panel").slideDown("slow");
+    $("#panel").slideUp("slow");
     $("#flip_wrapper").css({"display":"block"});
 
-
   });
+
 });
 </script>
+ 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<div class="footer-recent-post-bar"  id="panel">
 				
@@ -38,6 +41,7 @@ $(document).ready(function(){
 		</div>
 
 		<div class="footer-recent-post-bar-container">
+			
 			<div class="footer-recent-post-bar-title">
 				My new Stories
 			</div>
@@ -96,8 +100,6 @@ $(document).ready(function(){
 						<img src="https://cdn.goodlayers.com/akea/wp-content/uploads/2018/11/hugues-de-buyer-mimeure-335733-unsplash-150x150.jpg"> 
 					</a>
 				</div>
-
-
 			</div>
 		</div>		
 	</div>

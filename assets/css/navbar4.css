@@ -1,5 +1,5 @@
 /*
-Errno::ENOENT: No such file or directory @ rb_sysopen - assets/sass/nastylstyle.scss
+Errno::ENOENT: No such file or directory @ rb_sysopen - assets/sass/navbar4.scss
 
 Backtrace:
 /home/storrea-dev3/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.7.2/lib/sass/plugin/compiler.rb:454:in `read'
@@ -20,4 +20,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - assets/sass/nastylstyle.scss"; }
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - assets/sass/navbar4.scss"; }
