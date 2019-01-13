@@ -68,6 +68,21 @@ nav {
         // display: grid;
         // grid-template-columns: repeat(4, auto);
         // width: 80%;
+        li{
+             a{
+        color: white;
+        font-weight: bold;
+        font-size: 1.4em;
+        .dropdown-content{
+            display: none;
+        }
+        &:checked{
+            .dropdown-conent{
+                display: block;
+            }
+        }
+        }
+        .has-children{
         a{
             color: white;
             font-weight: bold;
@@ -87,6 +102,9 @@ nav {
                 }
             }
         }
+        }  
+        }
+
         span {
             color: gray;
             display: block;
