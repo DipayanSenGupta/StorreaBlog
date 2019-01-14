@@ -2,7 +2,7 @@
  	
  	<head>
     <title>Storrea Blog</title>
-    <link rel = "stylesheet" type = "text/css" href = "../assets/sass/style.css">
+    <link rel = "stylesheet" type = "text/css" href = "../assets/css/style.css">
     <!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,6 +13,43 @@
 <div class="header">
 
 	<div class="section-1 section_space">
+		<div class="hamburger-menu">
+			<nav id="overlay">
+				<a href="" class="close-button fa fa-times"  id="close-menu"></a>
+				<ul>
+					<li>
+					<a href="#" class="dropdown-content" name="Home">Home</a>
+					<span>Watch out, This is my site</span>
+					<ul class="content" name="Home">
+					<li><a href="#">Themes</a></li>
+					<li><a href="#">Plugins</a></li>
+					<li><a href="#">Tutorials</a></li>
+					</ul>
+					</li>
+
+					<li>
+					<a href="#" class="dropdown-content" name="About_Me">About Me</a>
+					<span>Watch out, This is my site</span>
+					<ul class="content" name="About_Me">
+					<li><a href="#">Themes</a></li>
+					<li><a href="#">Plugins</a></li>
+					<li><a href="#">Tutorials</a></li>
+					</ul>
+					</li>
+
+					<li>
+					<a href="#">Services</a>
+					<span>Watch out, This is my site</span>
+					</li>
+
+					<li>
+					<a href="#">Contact</a>
+					<span>Watch out, This is my site</span>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
 		<div class="action-bar">
 			<div class="container">
 
@@ -57,7 +94,7 @@
 	        	<div class="menu-right-icons">
 		        	<ul>
   							<li>
-									<a href=""><i class="fa fa-bars"></i></a>
+									<a href=""><i class="fa fa-bars menu-btn" id="open-menu" alt="menu"></i></a>
 								</li>
 								<li>
 									<a href=""><i class="fa fa-search"></i></a>
@@ -620,40 +657,21 @@
 			</a>
 		</div>
 		
-<!-- 		<div class="recent_post_bar">
-	
-			<div class="recent_post_bar_close">
-				<i class="fa fa-minus"></i>
-			</div>
-			
-			<div class="recent_post_bar_container">
-				<h3 class="recent_bar_wrap_title">My new stories</h3>
-				<div class="recent_post_bar_wrap">
-					<div class="recent_post_bar_item">
-						<div class="recent_post_bar_item_shadow">
-						<a href="">
-							<img src="https://cdn.goodlayers.com/akea/wp-content/uploads/2018/11/post-vr-150x150.jpg" alt="">
-						</a>		
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div> -->
-
-	<!-- footer -->
-	</div>
+<!-- footer -->
+</div>
 
 
 </div>	
 <!-- header -->
 
 		<!-- jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../assets/js/script.js"></script>
 
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="js/style.js"></script>
+		<!-- <script src="js/style.js"></script> -->
+
   </body>
 </html>
 

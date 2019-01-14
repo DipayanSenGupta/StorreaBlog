@@ -1,0 +1,43 @@
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="index2.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+  $("#open-menu").on("click",function(e){
+  	e.preventDefault();
+		$(".overlay").css({"opacity":"1"});
+    console.log("The paragraph was clicked.");
+  
+  });
+
+  $("#close-menu").on("click",function(e){
+    e.preventDefault();
+		$(".overlay").css({"opacity":"0"})
+  });
+
+});
+</script>
+<body>
+	<div class="lower">
+		<!-- <label for="op">click the text</label> -->
+				<a href=""><i class="fa fa-bars menu-btn" id="open-menu" alt="menu"></i></a>
+
+	</div>
+	<div class="overlay">
+		<!-- <label for="op"></label> -->
+				<a href=""><i class="fa fa-times menu-btn" id="open-menu" alt="menu"></i></a>
+
+		<nav>
+			<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Work</a></li>
+			<li><a href="#">Clients</a></li>
+			<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+</body>
+
+</html>
