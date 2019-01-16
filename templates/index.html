@@ -14,40 +14,30 @@
 
 	<div class="section-1 section_space">
 		<div class="hamburger-menu">
-			<nav id="overlay">
-				<a href="" class="close-button fa fa-times"  id="close-menu"></a>
-				<ul>
-					<li>
-					<a href="#" class="dropdown-content" name="Home">Home</a>
-					<span>Watch out, This is my site</span>
-					<ul class="content" name="Home">
-					<li><a href="#">Themes</a></li>
-					<li><a href="#">Plugins</a></li>
-					<li><a href="#">Tutorials</a></li>
-					</ul>
-					</li>
+		
+			<div id="myNav" class="overlay">
+			  <a href="javascript:void(0)" class="closebtn" id ="close-menu">&times;</a>
+			  <div class="overlay-content">
+			    <a href="#">About</a>
+			    <a href="#">Services</a>
+			    <a href="#">Clients</a>
+			    <a href="#">Contact</a>
+			  </div>
+			</div>
 
-					<li>
-					<a href="#" class="dropdown-content" name="About_Me">About Me</a>
-					<span>Watch out, This is my site</span>
-					<ul class="content" name="About_Me">
-					<li><a href="#">Themes</a></li>
-					<li><a href="#">Plugins</a></li>
-					<li><a href="#">Tutorials</a></li>
-					</ul>
-					</li>
+		</div>
 
-					<li>
-					<a href="#">Services</a>
-					<span>Watch out, This is my site</span>
-					</li>
 
-					<li>
-					<a href="#">Contact</a>
-					<span>Watch out, This is my site</span>
-					</li>
-				</ul>
-			</nav>
+		<div class="search_content overlay">
+			<div id="search_content_id" class="overlay">
+					<div class="overlay-content">
+ 						<div class="search_input">
+	 						<input type="text" class="search_input" placeholder="search" name="search_field">
+	 						<a href="" class="search_submit"><i class="fa fa-search"></i></a>
+							<a href="javascript:void(0)" class="closebtn" id ="close-menu-search">&times;</a>
+ 						</div>
+					</div>
+			</div>
 		</div>
 
 		<div class="action-bar">
@@ -94,13 +84,13 @@
 	        	<div class="menu-right-icons">
 		        	<ul>
   							<li>
-									<a href=""><i class="fa fa-bars menu-btn" id="open-menu" alt="menu"></i></a>
+									<a href="" id="open-menu" alt="menu"><i class="fa fa-bars" ></i></a>
 								</li>
 								<li>
-									<a href=""><i class="fa fa-search"></i></a>
+									<a href="" id="open-menu-search" alt="menu"closeNav><i class="fa fa-search"></i></a>
 								</li>
 								<li>
-									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href="" ><i class="fa fa-shopping-cart"></i></a>
 								</li>
 			
 							</ul>
@@ -119,21 +109,45 @@
 
 	<div class="section-2 section_space">
 			<div class="navigation">
-				<nav class="navbar">
-				  <div class="container">
-						<ul>
-						<li class="one"><a href="#">Tres</a></li>
-				 		<li class="two"><a href="#">Quatro</a></li>
-				 		<li class="image_logo_holder"> 	
-		    			<img src="https://demo.goodlayers.com/akea/wp-content/uploads/2018/11/logo-2-1.png"alt="">
-						</li>
-				    <li class="three"><a href="#">Page 2</a></li>
-				    <li class="four"><a href="#">Page 3</a></li>
-  				  <hr />
-				    </ul>
-				  </div>
-				</nav>
+				<ul class="menu" id="fixed">
+				<li class="slide-in-out dropdown" >
+	      <a class="dropdown-toggle" href="#" data-toggle="dropdown">Home </a>
+	        <ul class="dropdown-menu">
+			         <li><a class="dropdown-item" href="#">Action</a>
+	      				<ul class="dropdown-menu">
+				         <li><a class="dropdown-item" href="#">Action</a>
+										<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Action</a>
+										</li> 
+										<li><a class="dropdown-item" href="#">Another action</a></li>
+										<li><a class="dropdown-item" href="#">Something else here</a></li>
+										<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+				         </li> 
+				          <li><a class="dropdown-item" href="#">Another action</a></li>
+				          <li><a class="dropdown-item" href="#">Something else here</a></li>
+				          <li><a class="dropdown-item" href="#">Something else here</a></li>
+				        </ul>
+
+			         </li> 
+			          <li><a class="dropdown-item" href="#">Another action</a></li>
+			          <li><a class="dropdown-item" href="#">Something else here</a></li>
+			          <li><a class="dropdown-item" href="#">Something else here</a></li>
+			        </ul>
+				</li>
+				<li class="slide-in-out"><a href="">Pages</a></li>
+				<li class="slide-in-out"><a href="">Category</a></li>
+		 		<li class="image_logo_holder"> 	
+  				<img src="https://demo.goodlayers.com/akea/wp-content/uploads/2018/11/logo-2-1.png"alt="">
+				</li>
+				<li class="slide-in-out"><a href="">Layout</a></li>
+				<li class="slide-in-out"><a href="">About</a></li>
+				<li class="slide-in-out"><a href="">Features</a></li>
+
+				</ul>
 			</div>
+
+
 	</div>
 	<!-- section-2  -->
 
@@ -674,6 +688,3 @@
 
   </body>
 </html>
-
-
-
