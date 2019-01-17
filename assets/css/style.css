@@ -196,8 +196,7 @@ html, body {
       .header .navigation .menu li.slide-in-out {
         text-decoration: none;
         display: inline-block;
-        position: relative;
-        /* prepare the position for sliding in and out */ }
+        position: relative; }
         .header .navigation .menu li.slide-in-out:before {
           content: '';
           display: block;
@@ -206,7 +205,6 @@ html, body {
           transition: width 0s ease, background-color .5s ease;
           -webkit-transition: width 0s ease, background-color .5s ease;
           -moz-transition: width 0s ease, background-color .5s ease;
-          /* position the content to the left bottom corner of the parent element to make it to slide in from left to right on hover */
           position: absolute;
           left: 0;
           bottom: 0; }
@@ -218,7 +216,6 @@ html, body {
           transition: width .5s ease;
           -webkit-transition: width .5s ease, background-color .5s ease;
           -moz-transition: width .5s ease, background-color .5s ease;
-          /* position the content to the left bottom corner of the parent element to make it to slide out from left to right on hover */
           position: absolute;
           right: 0;
           bottom: 0; }
@@ -234,19 +231,23 @@ html, body {
           transition: all 0s ease;
           -webkit-transition: width 0s ease;
           -moz-transition: width .0s ease; }
-      .header .navigation .menu li ul.dropdown-menu {
-        background-color: #333333; }
-        .header .navigation .menu li ul.dropdown-menu li {
+      .header .navigation .menu li ul {
+        color: #787878;
+        padding: 6px 30px 6px 12px;
+        display: inline-block; }
+        .header .navigation .menu li ul.dropdown-menu {
           background-color: #333333; }
-          .header .navigation .menu li ul.dropdown-menu li:hover {
-            display: block; }
-          .header .navigation .menu li ul.dropdown-menu li a {
-            color: #787878;
-            padding: 6px 30px 6px 12px;
-            display: inline-block; }
+          .header .navigation .menu li ul.dropdown-menu li {
+            background-color: #333333; }
             .header .navigation .menu li ul.dropdown-menu li a:hover {
               color: #fff;
               background-color: #333333; }
+            .header .navigation .menu li ul.dropdown-menu li a:after {
+              margin-left: 5px;
+              content: '\25BA'; }
+            .header .navigation .menu li ul.dropdown-menu li a:only-child:after {
+              margin-left: 0;
+              content: ''; }
       .header .navigation .menu li a {
         /*width: 25%;*/
         padding: .75rem 0;
