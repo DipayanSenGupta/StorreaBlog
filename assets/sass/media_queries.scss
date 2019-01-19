@@ -1,0 +1,69 @@
+// $theme-color:#f88fb5;
+// $bcolor:#000;
+// $wcolor:#fff;
+// $gcolor:#9e9e9e;
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+$large-desktop: '(min-width: 1400px) and (max-width: 1920px)';
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+$normal-desktop: '(min-width: 1025px) and (max-width: 1280px)';
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+
+$tablet-landscape: '(min-width: 768px) and (max-width: 1024px) and (orientation: landscape)';
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@mixin respond-to($device){
+	@media only screen and #{$device} {
+		@content;
+	}
+}
+
+
+@include respond-to($tablet-landscape){
+
+  .header-top-logo{
+    display: none;
+  }
+  .menu-right-icons{
+    margin-top: 0px  !important;
+  }
+  .header-social-media{
+    display: none;
+  }
+  .logo_less_1024{
+    display: block !important;
+  }
+  .navigation{
+    display: none;
+  }
+
+}
+
+@include respond-to($large-desktop){
+
+
+
+}
+
+@include respond-to($normal-desktop){
+
+}
+
+
