@@ -92,14 +92,15 @@ $(document).ready(function() {
     })(jQuery);
 
   $("nav ul li").each(function(){
-    console.log ($(this).children("ul").length)
-    if($(this).parent().children("ul").length){
-     console.log("helo")
+    // console.log ($(this).children("ul").length)
+    // console.log ($(this).children("ul"));
+     console.log ($(this).has("ul"));
+    if($(this).has("ul")){
     $(this).addClass("has_children");
     }
   });
 
-  
+
   $('.dropdown-content').click(function() {          
             var name = $(this).attr("name");
             var content = $('.content[name=' + name + ']');
