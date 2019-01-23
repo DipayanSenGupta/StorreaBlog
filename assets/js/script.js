@@ -91,12 +91,14 @@ $(document).ready(function() {
         }
     })(jQuery);
 
-  $("nav ul li").each(function(){
+  $("nav ul li ul").each(function(){
     // console.log ($(this).children("ul").length)
     // console.log ($(this).children("ul"));
      console.log ($(this).has("ul"));
-    if($(this).has("ul")){
-    $(this).addClass("has_children");
+    // if($(this).has("ul"))
+
+    if($(this).children("li")){
+        $(this).parent().addClass("has-children");
     }
   });
 

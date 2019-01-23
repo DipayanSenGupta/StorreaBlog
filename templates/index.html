@@ -5,17 +5,19 @@
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
    </head>
    <body>
 
 
       <div class="navigation-1">       
           <nav id="overlay-hamburger">
-              <img src="images/close-button.svg" alt="menu" class="close-button"  id="close-menu">
               <ul class="ham-ul">
+                  <li><img src="images/close-button.svg" alt="menu" class="close-button"  id="close-menu"></li>
                   <li>
-                      <a href="#" class="dropdown-content" name="Home">Home</a>
-                      <ul class="content" name="Home">
+                      <a href="#" data-toggle="collapse" data-target="#demo1">Home</a>
+                      <ul id="demo1" class="collapse">
                           <li><a href="#">1</a></li>
                           <li><a href="#">2</a></li>
                           <li><a href="#">3</a></li>
@@ -23,8 +25,8 @@
                   </li>
 
                   <li>
-                      <a href="#" class="dropdown-content" name="About_Me">About Me</a>
-                      <ul class="content" name="About_Me">
+                      <a href="#" data-toggle="collapse" data-target="#demo2">About Me</a>
+                      <ul id="demo2" class="collapse">
                           <li><a href="#">4</a></li>
                           <li><a href="#">5</a></li>
                           <li><a href="#">6</a></li>
@@ -45,28 +47,6 @@
       <div class="header">
 
          <div class="section-1 section_space">
-<!--             <div class="hamburger-menu">
-               <div id="myNav" class="overlay">
-                  <a href="javascript:void(0)" class="closebtn" id ="close-menu">&times;</a>
-                  <ul class="overlay-content">
-                     <li>
-                        <a href="#">
-                           About</a class="dropdown-content" name="Home">
-                           <ul class="overlay-content" class="content" name="Home">
-                              <li>
-                        <a href="#">About</a>
-                        </li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Clients</a></li>
-                        <li><a href="#">Contact</a></li>
-                        </ul>
-                     </li>
-                     <li><a href="#">Services</a></li>
-                     <li><a href="#">Clients</a></li>
-                     <li><a href="#">Contact</a></li>
-                  </ul>
-               </div>
-            </div> -->
             <div class="search_content overlay">
                <div id="search_content_id" class="overlay">
                   <div class="overlay-content">
@@ -185,9 +165,6 @@
                   <li class="slide-in-out"><a href="">Features</a></li>
                </ul>
             </div>
-
-
-
          </div>
          <!-- section-2  -->
          <div class="section-3 section_space">
@@ -240,7 +217,8 @@
             <div class="container">
                <div class="row">
                   <div class="col-md-12 section_align">
-                     <div class="col-md-8 col-sm-7">
+                     <div class="col-md-8 col-sm-12">
+                       
                         <div class="blog_post_thumbnail">
                            <div class="image_widget">
                               <div class="placeholder">         	
@@ -289,9 +267,255 @@
                               </div>
                            </div>
                         </div>
+
+                        <div class="blog_post_thumbnail">
+                           <div class="image_widget">
+                              <div class="placeholder">           
+                                 <img src="https://cdn.goodlayers.com/akea/wp-content/uploads/2018/11/pexels-photo-25284-1000x486.jpg" class="img-responsive ">
+                              </div>
+                              <div class="likes">
+                                 <a href="">
+                                    <span>43</span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="blog_post_container">
+                              <div class="blogPost">
+                              <h1>8 Ways to travel like a pro</h1>
+                              <span > kelly gordon</span>
+                              <span class="head_divider"></span>
+                              <span > OCTOBER 22, 2018</span>
+                              <span class="head_divider"></span>              
+                              <span > FASHION, PHOTOGRAPHY</span>
+                              <span class="head_divider"></span>
+                              <br>
+                              <p>
+                              I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                              </p>
+                              </div>
+                              <div class="div_clear">
+                              <div class="social-media" >
+                                 <ul>
+                                 <li>
+                                 <a href="#"> <i class="fa fa-facebook"></i></a>
+                                 </li>
+                                 <li>
+                                 <a href="#"> <i class="fa fa-twitter"></i></a>
+                                 </li>
+                                 <li>
+                                 <a href="#" > <i class="fa fa-google"></i></a>
+                                 </li>
+                                 <li>
+                                 <a href="#" > <i class="fa fa-youtube"></i></a>
+                                 </li>
+                                 <li>
+                                 <a href="#" > <i class="fa fa-linked-in"></i></a>
+                                 </li>
+                                 </ul>
+                              </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="blog_post_thumbnail">
+                           <div class="image_widget">
+                              <div class="placeholder">           
+                                 <img src="https://cdn.goodlayers.com/akea/wp-content/uploads/2018/11/pexels-photo-225227-1000x486.jpeg" class="img-responsive ">
+                              </div>
+                              <div class="likes">
+                                 <a href="">
+                                 <span>43</span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="blog_post_container">
+                              <div class="blogPost">
+                                 <h1>9 Most Awesome Lake with Blue Mountain</h1>
+                                 <span > kelly gordon</span>
+                                 <span class="head_divider"></span>
+                                 <span > OCTOBER 22, 2018</span>
+                                 <span class="head_divider"></span>              
+                                 <span > FASHION, PHOTOGRAPHY</span>
+                                 <span class="head_divider"></span>
+                                 <br>
+                                 <p>
+                                    I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                                 </p>
+                              </div>
+                              <div class="div_clear">
+                                 <div class="social-media" >
+                                    <ul>
+                                       <li>
+                                          <a href="#"> <i class="fa fa-facebook"></i></a>
+                                       </li>
+                                       <li>
+                                          <a href="#"> <i class="fa fa-twitter"></i></a>
+                                       </li>
+                                       <li>
+                                          <a href="#" > <i class="fa fa-google"></i></a>
+                                       </li>
+                                       <li>
+                                          <a href="#" > <i class="fa fa-youtube"></i></a>
+                                       </li>
+                                       <li>
+                                          <a href="#" > <i class="fa fa-linked-in"></i></a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="blog_post_thumbnail">
+                           <div class="image_widget">
+                              <div class="placeholder">           
+                                 <img src="https://cdn.goodlayers.com/akea/wp-content/uploads/2018/11/hugues-de-buyer-mimeure-335733-unsplash-1000x486.jpg" class="img-responsive ">
+                              </div>
+                              <div class="likes">
+                                 <a href="">
+                                 <span>43</span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="blog_post_container">
+                              <div class="blogPost">
+                                 <h1>10 Most Awesome Breath taking place</h1>
+                                 <span > kelly gordon</span>
+                                 <span class="head_divider"></span>
+                                 <span > OCTOBER 22, 2018</span>
+                                 <span class="head_divider"></span>              
+                                 <span > FASHION, PHOTOGRAPHY</span>
+                                 <span class="head_divider"></span>
+                                 <br>
+                                 <p>
+                                    I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                                 </p>
+                              </div>
+                              <div class="div_clear">
+                                 <div class="social-media" >
+                                    <ul>
+                                       <li>
+                                          <a href="#"> <i class="fa fa-facebook"></i></a>
+                                       </li>
+                                       <li>
+                                          <a href="#"> <i class="fa fa-twitter"></i></a>
+                                       </li>
+                                       <li>
+                                          <a href="#" > <i class="fa fa-google"></i></a>
+                                       </li>
+                                       <li>
+                                          <a href="#" > <i class="fa fa-youtube"></i></a>
+                                       </li>
+                                       <li>
+                                          <a href="#" > <i class="fa fa-linked-in"></i></a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="blog_post_thumbnail">
+                           <div class="image_widget">
+                              <div class="placeholder">           
+                                 <img src="https://cdn.goodlayers.com/akea/wp-content/uploads/2018/11/tanja-heffner-204193-unsplash-1000x486.jpg" class="img-responsive ">
+                              </div>
+                              <div class="likes">
+                                 <a href="">
+                                 <span>43</span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="blog_post_container">
+                              <div class="blogPost">
+                                 <h1>12 Most Awesome Trend in summer</h1>
+                                 <span > kelly gordon</span>
+                                 <span class="head_divider"></span>
+                                 <span > OCTOBER 22, 2018</span>
+                                 <span class="head_divider"></span>              
+                                 <span > FASHION, PHOTOGRAPHY</span>
+                                 <span class="head_divider"></span>
+                                 <br>
+                                 <p>
+                                    I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                                 </p>
+                              </div>
+                              <div class="div_clear">
+                                 <div class="social-media" >
+                                    <ul>
+                                       <li>
+                                          <a href="#"> <i class="fa fa-facebook"></i></a>
+                                       </li>
+                                       <li>
+                                          <a href="#"> <i class="fa fa-twitter"></i></a>
+                                       </li>
+                                       <li>
+                                          <a href="#" > <i class="fa fa-google"></i></a>
+                                       </li>
+                                       <li>
+                                          <a href="#" > <i class="fa fa-youtube"></i></a>
+                                       </li>
+                                       <li>
+                                          <a href="#" > <i class="fa fa-linked-in"></i></a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="blog_post_thumbnail">
+                           <div class="image_widget">
+                              <div class="placeholder">           
+                                 <img src="https://cdn.goodlayers.com/akea/wp-content/uploads/2018/11/brenda-godinez-228181-unsplash-1000x486.jpg" class="img-responsive ">
+                              </div>
+                              <div class="likes">
+                                 <a href="">
+                                 <span>43</span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="blog_post_container">
+                              <div class="blogPost">
+                                 <h1>10 Best Way to Styling your food</h1>
+                                 <span > kelly gordon</span>
+                                 <span class="head_divider"></span>
+                                 <span > OCTOBER 22, 2018</span>
+                                 <span class="head_divider"></span>              
+                                 <span > FASHION, PHOTOGRAPHY</span>
+                                 <span class="head_divider"></span>
+                                 <br>
+                                 <p>
+                                    I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                                 </p>
+                              </div>
+                              <div class="div_clear">
+                                 <div class="social-media" >
+                                    <ul>
+                                       <li>
+                                          <a href="#"> <i class="fa fa-facebook"></i></a>
+                                       </li>
+                                       <li>
+                                          <a href="#"> <i class="fa fa-twitter"></i></a>
+                                       </li>
+                                       <li>
+                                          <a href="#" > <i class="fa fa-google"></i></a>
+                                       </li>
+                                       <li>
+                                          <a href="#" > <i class="fa fa-youtube"></i></a>
+                                       </li>
+                                       <li>
+                                          <a href="#" > <i class="fa fa-linked-in"></i></a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
                      </div>
                      <!--left column-->
-                     <div class="col-md-4 col-sm-5">
+                     <div class="col-md-4 col-sm-12">
                         <div class="side_column">
                            <div class="text_widget">
                               <div class="about_me">
@@ -465,20 +689,22 @@
                                  <span>Recent Posts</span>
                                  <span class="head_divider"></span>
                               </h3>
-                              <div class="recent_post section_space">
+                              
+                              <div class="recent_post section_space ">
                                  <div>
                                     <img src="https://cdn.goodlayers.com/akea/wp-content/uploads/2018/11/post-vr-1000x486.jpg" alt="" class="center">
                                     <span class= "tag_on_image"> Trending </span>
                                  </div>
                                  <div>
-                                    <div ><a class="widget_title" href="">Check Out The Most Awesome VR Headset in 2020</a></div>
+                                    <div><a class="widget_title" href="">Check Out The Most Awesome VR Headset in 2020</a></div>
                                     <div>
                                        <span class="widget_subtitle">JANE SMITH</span>
                                        <span class="widget_subtitle">NOVEMBER 7, 2018</span>
                                     </div>
                                  </div>
                               </div>
-                              <div class="recent_post section_space">
+
+                              <div class="recent_post section_space col-md-12 col-sm-12">
                                  <div>
                                     <img src="https://cdn.goodlayers.com/akea/wp-content/uploads/2018/11/yiran-ding-624696-unsplash-1000x486.jpg" alt="" class="center">
                                     <span class= "tag_on_image"> Trending </span>
@@ -491,7 +717,8 @@
                                     </div>
                                  </div>
                               </div>
-                              <div class="recent_post section_space">
+
+                              <div class="recent_post section_space col-md-12 col-sm-12">
                                  <div>
                                     <img src="https://cdn.goodlayers.com/akea/wp-content/uploads/2018/11/christopher-burns-271403-unsplash-1000x486.jpg" alt="" class="center">
                                     <span class= "tag_on_image"> Trending </span>
@@ -504,6 +731,7 @@
                                     </div>
                                  </div>
                               </div>
+
                            </div>
                            <!-- recent_post_widget_collection -->
                            <div class="instagram_widgets">
@@ -512,29 +740,29 @@
                                  <span class="head_divider"></span>
                               </h3>
                               <div class="row">
-                                 <div class="col-md-4 col-sm-4 image_widget">
+                                 <div class="col-md-4 col-sm-4 image_widget_instagram">
                                     <a href="">
                                     <img src="https://scontent.cdninstagram.com/vp/41a2e876be81a73262985368ec77edb9/5CB83723/t51.2885-15/sh0.08/e35/s640x640/43984881_188819121994766_3216343442474950648_n.jpg?_nc_ht=scontent.cdninstagram.com" alt="" class="center img-responsive" ></a>
                                  </div>
-                                 <div class="col-md-4 col-sm-4">
+                                 <div class="col-md-4 col-sm-4 image_widget_instagram">
                                     <a href="">
                                     <img src="https://scontent.cdninstagram.com/vp/ef99ffa9b88514c3f5efd5bb6d167296/5CC4BFEF/t51.2885-15/sh0.08/e35/s640x640/45313783_2158345917812845_5821103427645807423_n.jpg?_nc_ht=scontent.cdninstagram.com" alt="" class="center img-responsive" ></a>
                                  </div>
-                                 <div class="col-md-4 col-sm-4">
+                                 <div class="col-md-4 col-sm-4 image_widget_instagram">
                                     <a href="">
                                     <img src="https://scontent.cdninstagram.com/vp/e436ce524efa65b90b4de5d9e44547d5/5CBE8F50/t51.2885-15/sh0.08/e35/s640x640/43914986_550843855339634_9131648220594836021_n.jpg?_nc_ht=scontent.cdninstagram.com" alt="" class="center img-responsive" ></a>
                                  </div>
                               </div>
                               <div class="row">
-                                 <div class="col-md-4 col-sm-4">
+                                 <div class="col-md-4 col-sm-4 image_widget_instagram">
                                     <a href="">
                                     <img src="https://scontent.cdninstagram.com/vp/422cd89239b8d991f76877200652aed2/5CCF1F7C/t51.2885-15/sh0.08/e35/s640x640/44371528_263042657731432_6452096443180721983_n.jpg?_nc_ht=scontent.cdninstagram.com" alt="" class="center img-responsive" ></a>
                                  </div>
-                                 <div class="col-md-4 col-sm-4">
+                                 <div class="col-md-4 col-sm-4 image_widget_instagram">
                                     <a href="">
                                     <img src="https://scontent.cdninstagram.com/vp/45c35e36b2a0372cac1965e2aab96699/5CD2758C/t51.2885-15/sh0.08/e35/s640x640/44292623_399451020592905_6536115609442328805_n.jpg?_nc_ht=scontent.cdninstagram.com" class="center img-responsive"></a>
                                  </div>
-                                 <div class="col-md-4 col-sm-4">
+                                 <div class="col-md-4 col-sm-4 image_widget_instagram">
                                     <a href="">
                                     <img src="https://scontent.cdninstagram.com/vp/9aa709f9b8ae32d13bd74083eed307bd/5CBBAECD/t51.2885-15/sh0.08/e35/s640x640/44898222_267175490542576_6183516087002698981_n.jpg?_nc_ht=scontent.cdninstagram.com" alt="" class="center img-responsive" ></a>
                                  </div>
@@ -560,7 +788,7 @@
                   </div>
                </div>
                <!-- pagiantion -->
-               <div class="row">
+                           <div class="row">
                   <h3>
                      <span>Instagram</span>
                      <span class="head_divider"></span>
@@ -586,7 +814,7 @@
             <div class="footer_wrapper">
                <div class="container">
                   <div class="row">
-                     <div class="col-md-4">
+                     <div class="col-md-4 col-sm-4">
                         <div class="widget_footer_title">
                            <h3>Akea, blogger</h3>
                         </div>
@@ -596,7 +824,7 @@
                            <span>call@akeablog.co</span> <br>
                         </div>
                      </div>
-                     <div class="col-md-5">
+                     <div class="col-md-5 col-sm-5">
                         <div class="widget_footer_title">
                            <h3>Category</h3>
                         </div>
@@ -611,7 +839,7 @@
                            </ul>
                         </div>
                      </div>
-                     <div class="col-md-3">
+                     <div class="col-md-3 col-sm-3">
                         <div class="widget_footer_title">
                            <h3>Follow Us</h3>
                         </div>

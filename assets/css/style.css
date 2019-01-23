@@ -11,9 +11,18 @@
   ##Screen = B/w 768px to 1024px
 */
 /* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+/* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .header-top-logo {
     display: none; }
@@ -29,14 +38,20 @@
 
   .navigation {
     display: none; } }
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .header .instagram_footer .instagram_image_widget {
+    width: 100%; } }
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .header .instagram_footer .instagram_image_widget {
+    width: 100%; } }
 html,
 body {
   overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
   border: 0;
   outline: 0;
   vertical-align: middle;
-  color: #787878; }
+  color: #787878;
+  font-family: 'Montserrat', sans-serif !important; }
 
 h3 span {
   font-weight: 700;
@@ -62,8 +77,9 @@ a {
   padding: 0;
   margin-right: 0;
   text-decoration: none;
-  font-weight: 700px;
-  font-size: 15px; }
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif; }
 
 .navigation-1 nav {
   position: fixed;
@@ -89,19 +105,6 @@ a {
       .navigation-1 nav .ham-ul li a .dropdown-content {
         display: none; }
       .navigation-1 nav .ham-ul li a:checked .dropdown-conent {
-        display: block; }
-    .navigation-1 nav .ham-ul .has-children a:first-child {
-      color: white;
-      font-weight: bold;
-      font-size: 1.4em; }
-      .navigation-1 nav .ham-ul .has-children a:first-child .dropdown-content {
-        display: none; }
-      .navigation-1 nav .ham-ul .has-children a:first-child:after {
-        content: "\f107";
-        color: #fff;
-        font-family: "FontAwesome";
-        margin-left: 15px; }
-      .navigation-1 nav .ham-ul .has-children a:first-child:checked .dropdown-conent {
         display: block; }
 .navigation-1 .show-menu {
   width: 100%;
@@ -135,6 +138,12 @@ a {
   to {
     transform: translateY(0);
     opacity: 1; } }
+.has-children:after {
+  content: "\f107";
+  color: #fff;
+  font-family: "FontAwesome";
+  margin-left: 15px; }
+
 .header .logo_less_1024, .header .navigation .menu li {
   display: none; }
   .header .logo_less_1024 .image_logo_holder, .header .navigation .menu li .image_logo_holder {
@@ -492,6 +501,8 @@ a {
         text-decoration: none !important; }
   .header .blog_post_thumbnail .blog_post_container {
     margin: 40px 10px; }
+    .header .blog_post_thumbnail .blog_post_container .blogPost p {
+      color: #8b8b8b; }
 .header .side_column .text_widget .about_me .arrow_link {
   color: #ec6a2a; }
   .header .side_column .text_widget .about_me .arrow_link:before {
@@ -502,6 +513,7 @@ a {
   background-color: #f4f4f4;
   text-align: center; }
   .header .side_column .newsletter .input-email {
+    margin: 0 auto;
     width: 100%;
     background: #fff;
     padding: 15px 17px;
@@ -516,14 +528,18 @@ a {
     color: #444;
     font-size: 14px;
     line-height: 20px;
-    border-radius: 0px; }
+    border-radius: 0px;
+    display: block; }
   .header .side_column .newsletter .input-submit {
+    margin: 0 auto;
+    display: block;
     font-size: 14px;
     font-weight: 700;
     text-transform: none;
     width: 100%;
     padding: 12px;
     line-height: 27px;
+    max-width: 300px;
     background-color: #2F2F2F;
     display: inline-block;
     border: 1px;
@@ -541,19 +557,15 @@ a {
   margin-right: 15px; }
 .header .side_column .category ul {
   margin-left: 0px;
-  list-style: none;
-  font-weight: 500;
-  font-size: 15px; }
+  list-style: none; }
   .header .side_column .category ul li {
     padding: 8%;
     margin-top: 10px; }
     .header .side_column .category ul li .category_widget_title {
       padding: 10;
-      font-size: 15px;
       color: #fff; }
     .header .side_column .category ul li .category_widget_count {
       float: right;
-      font-size: 15px;
       padding: 10;
       color: #fff; }
 .header .side_column .tag_cloud {
@@ -573,25 +585,25 @@ a {
     border-style: solid;
     margin-right: 6px;
     margin-bottom: 6px; }
-.header .side_column .recent_post div {
-  overflow: hidden; }
-  .header .side_column .recent_post div img {
-    height: 140px;
-    width: 339px; }
-  .header .side_column .recent_post div .tag_on_image {
-    padding: 8px 15px;
-    text-transform: none;
-    letter-spacing: 0px;
-    -webkit-border-radius: 3px;
-    background: #ec6a2a;
-    color: #fff; }
-.header .side_column .instagram_widgets .image_widget a img {
-  margin: 0px 2px 2px 0px; }
+.header .side_column .recent_post div img {
+  height: 140px;
+  width: 339px; }
+.header .side_column .recent_post div .tag_on_image {
+  padding: 8px 15px;
+  text-transform: none;
+  letter-spacing: 0px;
+  -webkit-border-radius: 3px;
+  background: #ec6a2a;
+  color: #fff; }
+.header .side_column .instagram_widgets .image_widget_instagram {
+  padding-right: 10px;
+  padding-left: 0px;
+  padding-bottom: 10px; }
 .header .instagram_footer .instagram_image_widget {
   float: left;
   width: 20%; }
 .header .pagination_custom {
-  width: 30%;
+  width: 50%;
   margin: 0 auto; }
   .header .pagination_custom a {
     display: inline-block;

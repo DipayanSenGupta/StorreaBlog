@@ -21,6 +21,12 @@ $normal-desktop: '(min-width: 1025px) and (max-width: 1280px)';
   ##Screen = B/w 768px to 1024px
 */
 
+$tablet-portrait: '(min-width: 768px) and (max-width: 1024px)';
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
 
 $tablet-landscape: '(min-width: 768px) and (max-width: 1024px) and (orientation: landscape)';
 
@@ -28,6 +34,15 @@ $tablet-landscape: '(min-width: 768px) and (max-width: 1024px) and (orientation:
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
+
+$phone-landscape: '(min-width: 481px) and (max-width: 767px)';
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+$phone-portrait: '(min-width: 320px) and (max-width: 480px)';
 
 @mixin respond-to($device){
 	@media only screen and #{$device} {
@@ -56,14 +71,28 @@ $tablet-landscape: '(min-width: 768px) and (max-width: 1024px) and (orientation:
 
 }
 
-@include respond-to($large-desktop){
+@include respond-to($phone-landscape){
 
-
+  .header{
+    .instagram_footer{
+      .instagram_image_widget{
+        width: 100%;
+      }
+    }
+  }
+}
+@include respond-to($normal-desktop){
 
 }
 
-@include respond-to($normal-desktop){
-
+@include respond-to($phone-portrait){
+  .header{
+    .instagram_footer{
+      .instagram_image_widget{
+        width: 100%;
+      }
+    }
+  }
 }
 
 
