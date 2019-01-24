@@ -23,7 +23,53 @@
   ##Screen = B/w 320px to 479px
 */
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .image_logo_holder {
+    height: 60px; }
+
+  .header-top-logo {
+    display: none !important; }
+
+  .menu-right-icons {
+    margin-top: 0px  !important; }
+
+  .header-social-media {
+    display: none !important; }
+
+  .logo_less_1024, .header .navigation .menu li {
+    display: block !important; }
+
+  .navigation {
+    display: none; } }
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .header .action-bar .header-top-logo {
+    display: none !important; }
+  .header .action-bar .menu-right-icons {
+    margin-top: 0px  !important; }
+  .header .action-bar .header-social-media {
+    display: none !important; }
+  .header .action-bar .menu-right-icons ul li {
+    display: inline-block; }
+    .header .action-bar .menu-right-icons ul li a {
+      font-size: 30px; }
+  .header .navigation .menu .logo_less_1024, .header .navigation .menu li {
+    display: block !important; }
+
+  .header-top-logo {
+    display: none !important; }
+
+  .menu-right-icons {
+    margin-top: 0px  !important; }
+
+  .header-social-media {
+    display: none !important; }
+
+  .logo_less_1024, .header .navigation .menu li {
+    display: block !important; }
+
+  .navigation {
+    display: none; } }
+@media only screen and (min-width: 481px) and (max-width: 767px) {
   .header-top-logo {
     display: none; }
 
@@ -37,13 +83,22 @@
     display: block !important; }
 
   .navigation {
-    display: none; } }
-@media only screen and (min-width: 481px) and (max-width: 767px) {
+    display: none; }
+
   .header .instagram_footer .instagram_image_widget {
     width: 100%; } }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .header .instagram_footer .instagram_image_widget {
-    width: 100%; } }
+    width: 100%; }
+
+  .header .action-bar .header-top-logo {
+    display: none !important; }
+  .header .action-bar .menu-right-icons {
+    margin-top: 0px  !important; }
+  .header .action-bar .header-social-media {
+    display: none !important; }
+  .header .navigation .menu .logo_less_1024, .header .navigation .menu li {
+    display: block !important; } }
 html,
 body {
   overflow-x: hidden;
@@ -586,15 +641,25 @@ a {
     margin-right: 6px;
     margin-bottom: 6px; }
 .header .side_column .recent_post div img {
-  height: 140px;
-  width: 339px; }
+  height: 486px;
+  width: 1000px;
+  max-width: 100%;
+  height: auto; }
 .header .side_column .recent_post div .tag_on_image {
+  position: absolute;
+  background: #ec6a2a;
+  color: #fff;
+  /* left: 18px; */
+  /* top: 16px; */
+  font-size: 12px;
+  line-height: 1;
   padding: 8px 15px;
   text-transform: none;
-  letter-spacing: 0px;
+  /* letter-spacing: 0px; */
+  /* border-radius: 3px; */
+  -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-  background: #ec6a2a;
-  color: #fff; }
+  bottom: 54px; }
 .header .side_column .instagram_widgets .image_widget_instagram {
   padding-right: 10px;
   padding-left: 0px;

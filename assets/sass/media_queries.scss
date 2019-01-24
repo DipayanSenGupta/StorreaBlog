@@ -51,7 +51,81 @@ $phone-portrait: '(min-width: 320px) and (max-width: 480px)';
 }
 
 
+@include respond-to($tablet-portrait){
+  .image_logo_holder{
+        height: 60px;
+  }
+
+  .header-top-logo{
+    display: none !important;
+  }
+  .menu-right-icons{
+    margin-top: 0px  !important;
+  }
+  .header-social-media{
+    display: none !important;
+  }
+  .logo_less_1024{
+    display: block !important;
+  }
+  .navigation{
+    display: none;
+  }
+
+}
+
+
 @include respond-to($tablet-landscape){
+
+  .header {
+    .action-bar {
+      .header-top-logo{
+        display: none !important;
+      }
+      .menu-right-icons{
+        margin-top: 0px  !important;
+      }
+      .header-social-media{
+        display: none !important;
+      }
+      .menu-right-icons {
+         ul {
+            li {
+              display: inline-block;
+               a {
+                  font-size: 30px;               }
+            }
+         }
+      }
+    }
+    .navigation{
+      .menu{ 
+        .logo_less_1024{
+          display: block !important;
+        }
+      }
+    }
+  }
+
+  .header-top-logo{
+    display: none !important;
+  }
+  .menu-right-icons{
+    margin-top: 0px  !important;
+  }
+  .header-social-media{
+    display: none !important;
+  }
+  .logo_less_1024{
+    display: block !important;
+  }
+  .navigation{
+    display: none;
+  }
+
+}
+
+@include respond-to($phone-landscape){
 
   .header-top-logo{
     display: none;
@@ -69,9 +143,6 @@ $phone-portrait: '(min-width: 320px) and (max-width: 480px)';
     display: none;
   }
 
-}
-
-@include respond-to($phone-landscape){
 
   .header{
     .instagram_footer{
@@ -93,6 +164,31 @@ $phone-portrait: '(min-width: 320px) and (max-width: 480px)';
       }
     }
   }
+  .header {
+    .action-bar {
+      .header-top-logo{
+        display: none !important;
+      }
+      .menu-right-icons{
+        margin-top: 0px  !important;
+      }
+      .header-social-media{
+        display: none !important;
+      }
+    }
+    .navigation{
+      .menu{ 
+        .logo_less_1024{
+          display: block !important;
+        }
+      }
+    }
+  }
+
+  // .navigation{
+  //   display: none !important;
+  // }
+
 }
 
 
