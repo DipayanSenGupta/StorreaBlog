@@ -1,119 +1,113 @@
-
 $(document).ready(function() {
     $(function () {
-      $('#fixed').stickyPanel();
+        $('#fixed').stickyPanel();
     });
 
-  $("#open-menu").on("click",function(e){
+    $("#open-menu-search").on("click",function(e){
     e.preventDefault();
-    $("#myNav").css({"width":"100%"});
-    console.log("hello")
-  }); 
+        $("#search_content_id").css({"width":"100%"});
+        console.log("hello")
+    });
 
-    $("nav ul li").each(function(){
-    console.log ($(this).children("ul").length)
-    if($(this).parent().children("ul").length){
-     console.log("helo")
-    $(this).addClass("has_children");
-    }
+    $("#close-menu-search").on("click",function(e){
+    e.preventDefault();
+        $("#search_content_id").css({"width":"0"});
+    });
+
+    $("#open-menu").click(function(){
+        $("#overlay-hamburger").addClass("show-menu");
+    });
+    $("#close-menu").click(function(){
+        $("#overlay-hamburger").removeClass("show-menu");
     });
 
 
-  $('.dropdown-content').click(function() {       
-    var name = $(this).attr("name");
-    var content = $('.content[name=' + name + ']');
-    $('.content').not(content).hide('fast');
-    content.slideToggle('fast');
-});
+    (function($){
+        'use strict';
 
-  
-  $("#close-menu").on("click",function(e){
-    e.preventDefault();
-    $("#myNav").css({"width":"0"});
-  });
+            var defaults = {
+            topOffset: 400, //px - offset to switch of fixed position
+            hideDuration: 300, //ms
+            stickyClass: 'is-fixed'
+            };
 
-  $("#open-menu-search").on("click",function(e){
-    e.preventDefault();
-    $("#search_content_id").css({"width":"100%"});
-    console.log("hello")
-  });
+        $.fn.stickyPanel = function(options){
+            if(this.length == 0) return this; // returns the current jQuery object
 
-  $("#close-menu-search").on("click",function(e){
-    e.preventDefault();
-    $("#search_content_id").css({"width":"0"});
-  });
-
-
-
-;(function($){
-    'use strict';
-
-    var defaults = {
-        topOffset: 400, //px - offset to switch of fixed position
-        hideDuration: 300, //ms
-        stickyClass: 'is-fixed'
-    };
-
-    $.fn.stickyPanel = function(options){
-        if(this.length == 0) return this; // returns the current jQuery object
-
-        var self = this,
+            var self = this,
             settings,
             isFixed = false, //state of panel
             stickyClass,
             animation = {
-                normal: self.css('animationDuration'), //show duration
-                reverse: '', //hide duration
-                getStyle: function (type) {
-                    return {
-                        animationDirection: type,
-                        animationDuration: this[type]
-                    };
-                }
+            normal: self.css('animationDuration'), //show duration
+            reverse: '', //hide duration
+            getStyle: function (type) {
+            return {
+            animationDirection: type,
+            animationDuration: this[type]
             };
+        }
+        };
 
         // Init carousel
-        function init(){
-            settings = $.extend({}, defaults, options);
-            animation.reverse = settings.hideDuration + 'ms';
-            stickyClass = settings.stickyClass;
-            $(window).on('scroll', onScroll).trigger('scroll');
-        }
+            function init(){
+                settings = $.extend({}, defaults, options);
+                animation.reverse = settings.hideDuration + 'ms';
+                stickyClass = settings.stickyClass;
+                $(window).on('scroll', onScroll).trigger('scroll');
+            }
 
         // On scroll
-        function onScroll() {
-            if ( window.pageYOffset > settings.topOffset){
-                if (!isFixed){
+            function onScroll() {
+                if ( window.pageYOffset > settings.topOffset){
+                    if (!isFixed){
                     isFixed = true;
                     self.addClass(stickyClass)
-                        .css(animation.getStyle('normal'));
-                }
-            } else {
+                    .css(animation.getStyle('normal'));
+                    }
+                } else {
                 if (isFixed){
                     isFixed = false;
 
-                    self.removeClass(stickyClass)
-                        .each(function (index, e) {
-                            // restart animation
-                            // https://css-tricks.com/restart-css-animation/
-                            void e.offsetWidth;
-                        })
-                        .addClass(stickyClass)
-                        .css(animation.getStyle('reverse'));
+                self.removeClass(stickyClass)
+                .each(function (index, e) {
+                // restart animation
+                // https://css-tricks.com/restart-css-animation/
+                void e.offsetWidth;
+                })
+                .addClass(stickyClass)
+                .css(animation.getStyle('reverse'));
 
                     setTimeout(function () {
-                        self.removeClass(stickyClass);
+                    self.removeClass(stickyClass);
                     }, settings.hideDuration);
                 }
+                }
             }
+
+            init();
+
+            return this;
         }
+    })(jQuery);
 
-        init();
+  $("nav ul li ul").each(function(){
+    // console.log ($(this).children("ul").length)
+    // console.log ($(this).children("ul"));
+     console.log ($(this).has("ul"));
+    // if($(this).has("ul"))
 
-        return this;
+    if($(this).children("li")){
+        $(this).parent().addClass("has-children");
     }
-})(jQuery);
+  });
 
 
+  $('.dropdown-content').click(function() {          
+            var name = $(this).attr("name");
+            var content = $('.content[name=' + name + ']');
+            $('.content').not(content).hide('fast');
+            content.slideToggle('fast');
+        });
 
 });
