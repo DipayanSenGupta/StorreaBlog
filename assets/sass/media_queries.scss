@@ -21,12 +21,6 @@ $normal-desktop: '(min-width: 1025px) and (max-width: 1280px)';
   ##Screen = B/w 768px to 1024px
 */
 
-$tablet-portrait: '(min-width: 768px) and (max-width: 1024px)';
-
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
 
 $tablet-landscape: '(min-width: 768px) and (max-width: 1024px) and (orientation: landscape)';
 
@@ -35,15 +29,6 @@ $tablet-landscape: '(min-width: 768px) and (max-width: 1024px) and (orientation:
   ##Screen = B/w 481px to 767px
 */
 
-$phone-landscape: '(min-width: 481px) and (max-width: 767px)';
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-$phone-portrait: '(min-width: 320px) and (max-width: 480px)';
-
 @mixin respond-to($device){
 	@media only screen and #{$device} {
 		@content;
@@ -51,82 +36,8 @@ $phone-portrait: '(min-width: 320px) and (max-width: 480px)';
 }
 
 
-@include respond-to($tablet-portrait){
-  .image_logo_holder{
-        height: 60px;
-  }
-
-  .header-top-logo{
-    display: none !important;
-  }
-  .menu-right-icons{
-    margin-top: 0px  !important;
-  }
-  .header-social-media{
-    display: none !important;
-  }
-  .logo_less_1024{
-    display: block !important;
-  }
-  .navigation{
-    display: none;
-  }
-
-}
-
-
 @include respond-to($tablet-landscape){
 
-  .header {
-    .action-bar {
-      .header-top-logo{
-        display: none !important;
-      }
-      .menu-right-icons{
-        margin-top: 0px  !important;
-      }
-      .header-social-media{
-        display: none !important;
-      }
-      .menu-right-icons {
-         ul {
-            li {
-              display: inline-block;
-               a {
-                  font-size: 30px;               }
-            }
-         }
-      }
-    }
-    .navigation{
-      .menu{ 
-        .logo_less_1024{
-          display: block !important;
-        }
-      }
-    }
-  }
-
-  .header-top-logo{
-    display: none !important;
-  }
-  .menu-right-icons{
-    margin-top: 0px  !important;
-  }
-  .header-social-media{
-    display: none !important;
-  }
-  .logo_less_1024{
-    display: block !important;
-  }
-  .navigation{
-    display: none;
-  }
-
-}
-
-@include respond-to($phone-landscape){
-
   .header-top-logo{
     display: none;
   }
@@ -143,51 +54,15 @@ $phone-portrait: '(min-width: 320px) and (max-width: 480px)';
     display: none;
   }
 
-
-  .header{
-    .instagram_footer{
-      .instagram_image_widget{
-        width: 100%;
-      }
-    }
-  }
 }
+
+@include respond-to($large-desktop){
+
+
+
+}
+
 @include respond-to($normal-desktop){
-
-}
-
-@include respond-to($phone-portrait){
-  .header{
-    .instagram_footer{
-      .instagram_image_widget{
-        width: 100%;
-      }
-    }
-  }
-  .header {
-    .action-bar {
-      .header-top-logo{
-        display: none !important;
-      }
-      .menu-right-icons{
-        margin-top: 0px  !important;
-      }
-      .header-social-media{
-        display: none !important;
-      }
-    }
-    .navigation{
-      .menu{ 
-        .logo_less_1024{
-          display: block !important;
-        }
-      }
-    }
-  }
-
-  // .navigation{
-  //   display: none !important;
-  // }
 
 }
 
