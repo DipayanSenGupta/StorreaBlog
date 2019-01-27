@@ -24,81 +24,89 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .image_logo_holder {
-    height: 60px; }
-
-  .header-top-logo {
+  .action-bar .header-top-logo {
+    display: none !important; }
+  .action-bar .menu-right-icons {
+    display: none !important; }
+  .action-bar .header-social-media {
     display: none !important; }
 
-  .menu-right-icons {
-    margin-top: 0px  !important; }
-
-  .header-social-media {
-    display: none !important; }
-
-  .logo_less_1024, .navigation .menu li {
-    display: block !important; }
-
-  .navigation {
-    display: none; } }
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .header .action-bar .header-top-logo {
-    display: none !important; }
-  .header .action-bar .menu-right-icons {
-    margin-top: 0px  !important; }
-  .header .action-bar .header-social-media {
-    display: none !important; }
-  .header .action-bar .menu-right-icons ul li {
-    display: inline-block; }
-    .header .action-bar .menu-right-icons ul li a {
-      font-size: 30px; }
-  .header .navigation .menu .logo_less_1024, .header .navigation .menu li {
-    display: block !important; }
-
-  .header-top-logo {
-    display: none !important; }
-
-  .menu-right-icons {
-    margin-top: 0px  !important; }
-
-  .header-social-media {
-    display: none !important; }
-
-  .logo_less_1024, .navigation .menu li {
-    display: block !important; }
-
-  .navigation {
-    display: none; } }
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-  .header-top-logo {
+  .navigation .menu .more-than-1024 {
     display: none; }
-
-  .menu-right-icons {
-    margin-top: 0px  !important; }
-
-  .header-social-media {
-    display: none; }
-
-  .logo_less_1024, .navigation .menu li {
+  .navigation .menu .logo_less_1024, .navigation .menu li {
     display: block !important; }
-
-  .navigation {
-    display: none; }
-
-  .header .instagram_footer .instagram_image_widget {
-    width: 100%; } }
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  .header .instagram_footer .instagram_image_widget {
-    width: 100%; }
-
-  .header .action-bar .header-top-logo {
-    display: none !important; }
-  .header .action-bar .menu-right-icons {
-    margin-top: 0px  !important; }
-  .header .action-bar .header-social-media {
-    display: none !important; }
-  .header .navigation .menu .logo_less_1024, .header .navigation .menu li {
+  .navigation .menu .menu-right-icons {
     display: block !important; } }
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .action-bar .header-top-logo {
+    display: none !important; }
+  .action-bar .menu-right-icons {
+    display: none !important; }
+  .action-bar .header-social-media {
+    display: none !important; }
+
+  .navigation .menu .more-than-1024 {
+    display: none; }
+  .navigation .menu .logo_less_1024, .navigation .menu li {
+    display: block !important; }
+  .navigation .menu .menu-right-icons {
+    display: block !important; } }
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .action-bar .header-top-logo {
+    display: none !important; }
+  .action-bar .menu-right-icons {
+    display: none !important; }
+  .action-bar .header-social-media {
+    display: none !important; }
+
+  .navigation .menu .more-than-1024 {
+    display: none; }
+  .navigation .menu .logo_less_1024, .navigation .menu li {
+    display: block !important; }
+  .navigation .menu .menu-right-icons {
+    display: block !important; } }
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .action-bar .header-top-logo {
+    display: none !important; }
+  .action-bar .menu-right-icons {
+    display: none !important; }
+  .action-bar .header-social-media {
+    display: none !important; }
+
+  .navigation .menu .more-than-1024 {
+    display: none; }
+  .navigation .menu .logo_less_1024, .navigation .menu li {
+    display: block !important; }
+  .navigation .menu .menu-right-icons {
+    display: block !important; } }
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .action-bar .header-top-logo {
+    display: block !important; }
+  .action-bar .menu-right-icons {
+    display: block !important; }
+  .action-bar .header-social-media {
+    display: block !important; }
+
+  .navigation .menu .more-than-1024 {
+    display: block; }
+  .navigation .menu .logo_less_1024, .navigation .menu li {
+    display: none !important; }
+  .navigation .menu .menu-right-icons {
+    display: none !important; } }
+@media only screen and (min-width: 1400px) and (max-width: 1920px) {
+  .action-bar .header-top-logo {
+    display: block !important; }
+  .action-bar .menu-right-icons {
+    display: block !important; }
+  .action-bar .header-social-media {
+    display: block !important; }
+
+  .navigation .menu .more-than-1024 {
+    display: block; }
+  .navigation .menu .logo_less_1024, .navigation .menu li {
+    display: none !important; }
+  .navigation .menu .menu-right-icons {
+    display: none !important; } }
 html,
 body {
   overflow-x: hidden;
@@ -135,6 +143,23 @@ a {
   font-weight: 500;
   font-size: 15px;
   font-family: "Montserrat", sans-serif; }
+
+.menuRightIcons {
+  position: absolute;
+  right: 0px;
+  margin-top: 50px; }
+  .menuRightIcons ul li {
+    display: inline-block; }
+    .menuRightIcons ul li a {
+      color: #242424;
+      margin-right: 2px; }
+
+.logo_less_1024, .navigation .menu li {
+  display: none; }
+  .logo_less_1024 img, .navigation .menu li img {
+    position: fixed;
+    left: 50px;
+    top: 11px; }
 
 .navigation-1 nav {
   position: fixed;
@@ -199,14 +224,13 @@ a {
   font-family: "FontAwesome";
   margin-left: 15px; }
 
-.logo_less_1024, .navigation .menu li {
-  display: none; }
-  .logo_less_1024 .image_logo_holder, .navigation .menu li .image_logo_holder {
-    padding-right: 0;
-    margin-right: 5%;
-    margin-left: 5%; }
-    .logo_less_1024 .image_logo_holder img, .navigation .menu li .image_logo_holder img {
-      height: 30px; }
+.image_logo_holder {
+  display: none;
+  padding-right: 0;
+  margin-right: 5%;
+  margin-left: 5%; }
+  .image_logo_holder img {
+    height: 30px; }
 
 .sticky {
   position: fixed;
@@ -390,14 +414,10 @@ a {
       max-width: 186px;
       margin: 0 auto; }
   .action-bar .menu-right-icons {
-    position: absolute;
-    right: 0px;
-    margin-top: 50px; }
-    .action-bar .menu-right-icons ul li {
-      display: inline-block; }
-      .action-bar .menu-right-icons ul li a {
-        color: #242424;
-        margin-right: 2px; }
+    position: fixed;
+    right: 58px; }
+    .action-bar .menu-right-icons a {
+      color: #242424; }
 
 .navigation .menu {
   left: 0;
@@ -410,6 +430,11 @@ a {
   animation-duration: 0.5s;
   transition: 0.5s;
   list-style-type: none; }
+  .navigation .menu .menu-right-icons {
+    position: fixed;
+    right: 58px; }
+    .navigation .menu .menu-right-icons a {
+      color: #242424; }
   .navigation .menu li {
     display: inline-block;
     margin-right: 2%;

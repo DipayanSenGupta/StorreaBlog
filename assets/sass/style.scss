@@ -49,6 +49,31 @@ a {
    font-size: 15px;
    font-family: "Montserrat", sans-serif;
 }
+.menuRightIcons{
+   position: absolute;
+   right: 0px;
+   margin-top: 50px;
+   ul {
+      li {
+         display: inline-block;
+         a {
+            color: #242424;
+            margin-right: 2px; // margin-right: 15;
+         }
+      }
+   }
+}
+.logo_less_1024 {
+   display: none;
+   // .image_logo_holder {
+   img{
+    position: fixed;
+    left: 50px;
+    top: 11px;
+   }
+   // }
+}
+
    .navigation-1 {
       nav {
          position: fixed;
@@ -151,19 +176,16 @@ a {
 
    }
 
-   // padding: 100px;
-   // ul li{list-style: none;}
-   .logo_less_1024 {
+   .image_logo_holder {
       display: none;
-      .image_logo_holder {
-         padding-right: 0;
-         margin-right: 5%;
-         margin-left: 5%;
-         img {
-            height: 30px;
-         }
+      padding-right: 0;
+      margin-right: 5%;
+      margin-left: 5%;
+      img {
+         height: 30px;
       }
    }
+   // }
    .sticky {
       position: fixed;
       width: 100%;
@@ -397,27 +419,24 @@ a {
             // margin-right: 25px;
          }
       }
-      .menu-right-icons {
-         // line-height: 140px;
-         position: absolute;
-         right: 0px;
-         margin-top: 50px;
-         // margin-top: -9px;
-         // margin-left: 60%;
-         ul {
-            li {
-               display: inline-block;
-               a {
-                  color: #242424;
-                  margin-right: 2px; // margin-right: 15;
-               }
-            }
-         }
+      .menu-right-icons{
+         position: fixed;
+         right: 58px;
+         a{
+          color: #242424;
+         }           
       }
    }
-
+         
    .navigation {
       .menu {
+         .menu-right-icons{
+            position: fixed;
+            right: 58px;
+            a{
+             color: #242424;
+            }           
+         }
          left: 0;
          top: 0;
          width: 100%;
@@ -428,8 +447,10 @@ a {
          animation-duration: 0.5s;
          transition: 0.5s;
          list-style-type: none;
+
          li {
             @extend .logo_less_1024;
+
             display: inline-block;
             margin-right: 2%;
             margin-left: 2%;
@@ -810,9 +831,9 @@ a {
       }
       .instagram_widgets {
          .image_widget_instagram {
-    padding-right: 10px;
-    padding-left: 0px;
-    padding-bottom: 10px;
+             padding-right: 10px;
+             padding-left: 0px;
+             padding-bottom: 10px;
          }
       }
    }
