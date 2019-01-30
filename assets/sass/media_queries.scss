@@ -49,165 +49,110 @@ $phone-portrait: '(min-width: 320px) and (max-width: 480px)';
 		@content;
 	}
 }
+
+
 @include respond-to($tablet-portrait){
 
     .action-bar {
       .header-top-logo{
         display: none !important;
       }
-      .menu-right-icons{
+      .header-social-media{
         display: none !important;
       }
-      .header-social-media{
+      .menu-right-icons {
         display: none !important;
       }
     }
     .navigation{
       .menu{
-        .more-than-1024 {
-          display: none;
-        }
-        .logo_less_1024{
+        .section_less_than_1024{
           display: block !important;
         }
-          .menu-right-icons{
-          display: block !important;
+        .section_more_than_1024{
+          display: none !important;
         }
       }
     }
-}
+  }
+
+
 @include respond-to($tablet-landscape){
 
     .action-bar {
       .header-top-logo{
         display: none !important;
       }
-      .menu-right-icons{
+      .header-social-media{
         display: none !important;
       }
-      .header-social-media{
+      .menu-right-icons {
         display: none !important;
       }
     }
     .navigation{
       .menu{
-        .more-than-1024 {
-          display: none;
-        }
-        .logo_less_1024{
+        .section_less_than_1024{
           display: block !important;
         }
-          .menu-right-icons{
-          display: block !important;
+        .section_more_than_1024{
+          display: none !important;
         }
       }
     }
-}
+  }
+
+@include respond-to($phone-landscape){
+
+    .action-bar {
+      .header-top-logo{
+        display: none !important;
+      }
+      .header-social-media{
+        display: none !important;
+      }
+      .menu-right-icons {
+        display: none !important;
+      }
+    }
+    .navigation{
+      .menu{
+        .section_less_than_1024{
+          display: block !important;
+        }
+        .section_more_than_1024{
+          display: none !important;
+        }
+      }
+    }
+  }
+
 @include respond-to($phone-portrait){
     .action-bar {
       .header-top-logo{
         display: none !important;
       }
-      .menu-right-icons{
+      .header-social-media{
         display: none !important;
       }
-      .header-social-media{
+      .menu-right-icons {
         display: none !important;
       }
     }
     .navigation{
       .menu{
-        .more-than-1024 {
-          display: none;
-        }
-        .logo_less_1024{
+        .section_less_than_1024{
           display: block !important;
         }
-          .menu-right-icons{
-          display: block !important;
+        .section_more_than_1024{
+          display: none !important;
         }
       }
     }
-}
-@include respond-to($phone-landscape){
-    .action-bar {
-      .header-top-logo{
-        display: none !important;
-      }
-      .menu-right-icons{
-        display: none !important;
-      }
-      .header-social-media{
-        display: none !important;
-      }
-    }
-    .navigation{
-      .menu{
-        .more-than-1024 {
-          display: none;
-        }
-        .logo_less_1024{
-          display: block !important;
-        }
-          .menu-right-icons{
-          display: block !important;
-        }
-      }
-    }
-}
+  }
+
 @include respond-to($normal-desktop){
-    .action-bar {
-      .header-top-logo{
-        display: block !important;
-      }
-      .menu-right-icons{
-        display: block !important;
-      }
-      .header-social-media{
-        display: block !important;
-      }
-    }
-    .navigation{
-      .menu{
-        .more-than-1024 {
-          display: block;
-        }
-        .logo_less_1024{
-          display: none !important;
-        }
-          .menu-right-icons{
-          display: none !important;
-        }
-      }
-    }
-}
-@include respond-to($large-desktop){
-    .action-bar {
-      .header-top-logo{
-        display: block !important;
-      }
-      .menu-right-icons{
-        display: block !important;
-      }
-      .header-social-media{
-        display: block !important;
-      }
-    }
-    .navigation{
-      .menu{
-        .more-than-1024 {
-          display: block;
-        }
-        .logo_less_1024{
-          display: none !important;
-        }
-          .menu-right-icons{
-          display: none !important;
-        }
-      }
-    }
-}
 
-
+}
 
 
