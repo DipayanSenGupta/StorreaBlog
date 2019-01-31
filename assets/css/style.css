@@ -687,6 +687,8 @@ a {
   margin-left: auto;
   margin-right: auto;
   color: #98a5b9;
+  left: 0;
+  bottom: 0;
   background-color: #212a39; }
   .section_5 .copyright_wrapper .copyright_left {
     float: left; }

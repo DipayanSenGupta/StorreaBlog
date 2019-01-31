@@ -15,9 +15,11 @@ $(document).ready(function() {
     });
 
     $("#open-menu").click(function(){
+        e.preventDefault();
         $("#overlay-hamburger").addClass("show-menu");
     });
     $("#close-menu").click(function(){
+        e.preventDefault();
         $("#overlay-hamburger").removeClass("show-menu");
     });
 
